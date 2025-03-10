@@ -14,13 +14,6 @@ public class User {
 
     public User() {}
 
-    public User(int idUser, String username, String name, String ssn, String role) {
-        this.idUser = idUser;
-        this.username = username;
-        this.name = name;
-        this.ssn = ssn;
-        this.role = role; }
-
     public User(int idUser, String username, String password) {
         this.idUser = idUser;
         this.username = username;

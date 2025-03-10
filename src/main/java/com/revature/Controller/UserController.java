@@ -42,7 +42,6 @@ public class UserController {
                 ctx.status(200).json("{\"message\":\"You logged in successfully!\"}");
                 HttpSession httpSession = ctx.req().getSession(true);
                 httpSession.setAttribute("user", loggedInUser);
-                System.out.println(loggedInUser.toString());
             }   else {
                 ctx.status(403).json("{\"error\":\"You could not log in!\"}");
             }
